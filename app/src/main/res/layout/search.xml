@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebad44">
+
+    <TextView
+        android:text="@string/enterKey"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prompt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:ems="10"
+        android:shadowColor="#000000"
+        android:id="@+id/searchBox"
+        android:selectAllOnFocus="true"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/prompt"
+        android:layout_alignStart="@+id/prompt"
+        android:layout_alignRight="@+id/prompt"
+        android:layout_alignEnd="@+id/prompt" />
+
+    <Button
+        android:text="@string/goButton"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:id="@+id/buttonGo" />
+</RelativeLayout>

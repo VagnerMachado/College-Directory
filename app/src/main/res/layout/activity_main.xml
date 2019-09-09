@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ebad44">
+
+    <RelativeLayout
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#161e68">
+
+        <Button
+            android:id="@+id/dean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/dean"
+            android:layout_alignBaseline="@+id/center"
+            android:layout_alignBottom="@+id/center"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@string/header"
+            android:textSize="20sp"
+            android:textColor="#dddddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:text="@string/center"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/center"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/header"
+            android:layout_toLeftOf="@+id/dean"
+            android:layout_toStartOf="@+id/dean" />
+
+        <Button
+            android:id="@+id/tower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/tower"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignBaseline="@+id/dean"
+            android:layout_alignBottom="@+id/dean"
+            android:layout_toRightOf="@+id/dean"
+            android:layout_toEndOf="@+id/dean" />
+
+        <Button
+            android:text="@string/clusterBuilding"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clusterBuilding"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/dean"
+            android:layout_alignLeft="@+id/center"
+            android:layout_alignStart="@+id/center"
+            android:layout_alignRight="@+id/dean"
+            android:layout_alignEnd="@+id/dean" />
+
+        <Button
+            android:text="@string/searchLabel"
+            android:onClick="onClickSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            android:layout_alignBaseline="@+id/clusterBuilding"
+            android:layout_alignBottom="@+id/clusterBuilding"
+            android:layout_alignLeft="@+id/tower"
+            android:layout_alignStart="@+id/tower" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/result" />
+
+</LinearLayout>

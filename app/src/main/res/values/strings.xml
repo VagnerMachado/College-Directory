@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NCC Database</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterKey">Enter a Department to search:</string>
+    <string name="search">editTextSearch</string>
+    <string name="center">Center</string>
+    <string name="dean">Dean</string>
+    <string name="tower">Tower</string>
+    <string name="clusterBuilding">Cluster/Building A-D</string>
+    <string name="searchLabel">Search</string>
+    <string name="result">Search Result</string>
+    <string name="goButton">Go</string>
+    <string name="no_name">Please Enter a Department to Search</string>
+    <string name="header">Click on a button to query the NCC Directory</string>
+</resources>
